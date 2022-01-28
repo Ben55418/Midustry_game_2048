@@ -50,7 +50,7 @@ jump 52 equal yKhPf_w false
 write 0 cell1 i
 op add i i 1
 jump 47 always
-set i 0:
+set i 0
 op lessThan yKhPf_w i 2
 jump 68 equal yKhPf_w false
 op rand r 16
@@ -525,7 +525,7 @@ jump 491 always
 jump 525 always
 op equal yKhPf_i didMove 1
 jump 543 equal yKhPf_i false
-set i 0:
+set i 0
 op lessThan yKhPf_w i 1
 jump 543 equal yKhPf_w false
 op rand r 16
