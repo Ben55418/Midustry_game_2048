@@ -1,7 +1,7 @@
 # Midustry_game_2048
 2048 game for mindustry
 
-2 processors, 1 memory cell, and 6 switches
+2 processors, 1 memory cell, and 5 switches
 
 processor a: graphics
 connected to cell1 (shared with b) 
