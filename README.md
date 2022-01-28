@@ -12,4 +12,6 @@ connected to cell1 (shared with a)
 connected to switch 1 as a reset switch
 connected to switch 2, 3, 4, 5 as up, right, down, left respectively
 
+the .msch file is the schematic for all the lazy people out there!
+
 that is all :)
