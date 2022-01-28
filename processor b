@@ -1,0 +1,549 @@
+sensor sreset switch1 @enabled
+sensor sup switch2 @enabled
+sensor sright switch3 @enabled
+sensor sdown switch4 @enabled
+sensor sleft switch5 @enabled
+read test cell1 19
+op notEqual yKhPf_i test 1
+jump 14 equal yKhPf_i false
+set i 19
+op lessThan yKhPf_w i 25
+jump 14 equal yKhPf_w false
+write 1 cell1 i
+op add i i 1
+jump 9 always
+read sresetp cell1 20
+read supp cell1 21
+read srightp cell1 22
+read sdownp cell1 23
+read sleftp cell1 24
+set reset 0
+set up 0
+set right 0
+set down 0
+set left 0
+op notEqual yKhPf_i sreset sresetp
+jump 28 equal yKhPf_i false
+set reset 1
+set sresetp sreset
+op notEqual yKhPf_i sup supp
+jump 32 equal yKhPf_i false
+set up 1
+set supp sup
+op notEqual yKhPf_i sright srightp
+jump 36 equal yKhPf_i false
+set right 1
+set srightp sright
+op notEqual yKhPf_i sdown sdownp
+jump 40 equal yKhPf_i false
+set down 1
+set sdownp sdown
+op notEqual yKhPf_i sleft sleftp
+jump 44 equal yKhPf_i false
+set left 1
+set sleftp sleft
+op equal yKhPf_i reset 1
+jump 68 equal yKhPf_i false
+set i 0
+op lessThan yKhPf_w i 16
+jump 52 equal yKhPf_w false
+write 0 cell1 i
+op add i i 1
+jump 47 always
+set i 0:
+op lessThan yKhPf_w i 2
+jump 68 equal yKhPf_w false
+op rand r 16
+op idiv r r 1
+read c cell1 r
+op equal yKhPf_i c 0
+jump 67 equal yKhPf_i false
+op rand p 10
+op lessThan yKhPf_i p 1
+jump 65 equal yKhPf_i false
+write 2 cell1 r
+jump 66 always
+write 1 cell1 r
+op add i i 1
+jump 53 always
+set didMove 0
+op equal yKhPf_i up 1
+jump 180 equal yKhPf_i false
+set columb 0
+op lessThan yKhPf_w columb 4
+jump 103 equal yKhPf_w false
+op add open columb 12
+op add a columb 8
+read b cell1 a
+op equal yKhPf_i b 0
+jump 80 equal yKhPf_i false
+set open a
+op add a columb 4
+read b cell1 a
+op equal yKhPf_i b 0
+jump 85 equal yKhPf_i false
+set open a
+read b cell1 columb
+op equal yKhPf_i b 0
+jump 89 equal yKhPf_i false
+set open columb
+op add i open 4
+op lessThan yKhPf_w i 16
+jump 101 equal yKhPf_w false
+read a cell1 i
+op notEqual yKhPf_i a 0
+jump 99 equal yKhPf_i false
+write a cell1 open
+write 0 cell1 i
+op add open open 4
+set didMove 1
+op add i i 4
+jump 90 always
+op add columb columb 1
+jump 72 always
+set columb 0
+op lessThan yKhPf_w columb 4
+jump 147 equal yKhPf_w false
+set y columb
+read a cell1 y
+op add z columb 4
+read b cell1 z
+op add yKhPf0 a b
+op notEqual yKhPf_i 0 yKhPf0
+jump 119 equal yKhPf_i false
+op equal yKhPf_i a b
+jump 119 equal yKhPf_i false
+op add c a 1
+write c cell1 y
+write 0 cell1 z
+set didMove 1
+op add y columb 4
+read a cell1 y
+op add z columb 8
+read b cell1 z
+op add yKhPf0 a b
+op notEqual yKhPf_i 0 yKhPf0
+jump 132 equal yKhPf_i false
+op equal yKhPf_i a b
+jump 132 equal yKhPf_i false
+op add c a 1
+write c cell1 y
+write 0 cell1 z
+set didMove 1
+op add y columb 8
+read a cell1 y
+op add z columb 12
+read b cell1 z
+op add yKhPf0 a b
+op notEqual yKhPf_i 0 yKhPf0
+jump 145 equal yKhPf_i false
+op equal yKhPf_i a b
+jump 145 equal yKhPf_i false
+op add c a 1
+write c cell1 y
+write 0 cell1 z
+set didMove 1
+op add columb columb 1
+jump 104 always
+set columb 0
+op lessThan yKhPf_w columb 4
+jump 179 equal yKhPf_w false
+op add open columb 12
+op add a columb 8
+read b cell1 a
+op equal yKhPf_i b 0
+jump 156 equal yKhPf_i false
+set open a
+op add a columb 4
+read b cell1 a
+op equal yKhPf_i b 0
+jump 161 equal yKhPf_i false
+set open a
+read b cell1 columb
+op equal yKhPf_i b 0
+jump 165 equal yKhPf_i false
+set open columb
+op add i open 4
+op lessThan yKhPf_w i 16
+jump 177 equal yKhPf_w false
+read a cell1 i
+op notEqual yKhPf_i a 0
+jump 175 equal yKhPf_i false
+write a cell1 open
+write 0 cell1 i
+op add open open 4
+set didMove 1
+op add i i 4
+jump 166 always
+op add columb columb 1
+jump 148 always
+jump 525 always
+op equal yKhPf_i down 1
+jump 293 equal yKhPf_i false
+set columb 0
+op lessThan yKhPf_w columb 4
+jump 215 equal yKhPf_w false
+set open columb
+op add a columb 4
+read b cell1 a
+op equal yKhPf_i b 0
+jump 191 equal yKhPf_i false
+set open a
+op add a columb 8
+read b cell1 a
+op equal yKhPf_i b 0
+jump 196 equal yKhPf_i false
+set open a
+op add a columb 12
+read b cell1 a
+op equal yKhPf_i b 0
+jump 201 equal yKhPf_i false
+set open a
+op sub i open 4
+op greaterThanEq yKhPf_w i 0
+jump 213 equal yKhPf_w false
+read a cell1 i
+op notEqual yKhPf_i a 0
+jump 211 equal yKhPf_i false
+write a cell1 open
+write 0 cell1 i
+op sub open open 4
+set didMove 1
+op sub i i 4
+jump 202 always
+op add columb columb 1
+jump 183 always
+set columb 0
+op lessThan yKhPf_w columb 4
+jump 259 equal yKhPf_w false
+op add y columb 12
+read a cell1 y
+op add z columb 8
+read b cell1 z
+op add yKhPf0 a b
+op notEqual yKhPf_i 0 yKhPf0
+jump 231 equal yKhPf_i false
+op equal yKhPf_i a b
+jump 231 equal yKhPf_i false
+op add c a 1
+write c cell1 y
+write 0 cell1 z
+set didMove 1
+op add y columb 8
+read a cell1 y
+op add z columb 4
+read b cell1 z
+op add yKhPf0 a b
+op notEqual yKhPf_i 0 yKhPf0
+jump 244 equal yKhPf_i false
+op equal yKhPf_i a b
+jump 244 equal yKhPf_i false
+op add c a 1
+write c cell1 y
+write 0 cell1 z
+set didMove 1
+op add y columb 4
+read a cell1 y
+set z columb
+read b cell1 z
+op add yKhPf0 a b
+op notEqual yKhPf_i 0 yKhPf0
+jump 257 equal yKhPf_i false
+op equal yKhPf_i a b
+jump 257 equal yKhPf_i false
+op add c a 1
+write c cell1 y
+write 0 cell1 z
+set didMove 1
+op add columb columb 1
+jump 216 always
+set columb 0
+op lessThan yKhPf_w columb 4
+jump 292 equal yKhPf_w false
+set open columb
+op add a columb 4
+read b cell1 a
+op equal yKhPf_i b 0
+jump 268 equal yKhPf_i false
+set open a
+op add a columb 8
+read b cell1 a
+op equal yKhPf_i b 0
+jump 273 equal yKhPf_i false
+set open a
+op add a columb 12
+read b cell1 a
+op equal yKhPf_i b 0
+jump 278 equal yKhPf_i false
+set open a
+op sub i open 4
+op greaterThanEq yKhPf_w i 0
+jump 290 equal yKhPf_w false
+read a cell1 i
+op notEqual yKhPf_i a 0
+jump 288 equal yKhPf_i false
+write a cell1 open
+write 0 cell1 i
+op sub open open 4
+set didMove 1
+op sub i i 4
+jump 279 always
+op add columb columb 1
+jump 260 always
+jump 525 always
+op equal yKhPf_i left 1
+jump 409 equal yKhPf_i false
+set row 0
+op lessThan yKhPf_w row 4
+jump 329 equal yKhPf_w false
+op mul s row 4
+op add open s 3
+op add a s 2
+read b cell1 a
+op equal yKhPf_i b 0
+jump 305 equal yKhPf_i false
+set open a
+op add a s 1
+read b cell1 a
+op equal yKhPf_i b 0
+jump 310 equal yKhPf_i false
+set open a
+read b cell1 s
+op equal yKhPf_i b 0
+jump 314 equal yKhPf_i false
+set open s
+op add i open 1
+op add yKhPf0 s 4
+op lessThan yKhPf_w i yKhPf0
+jump 327 equal yKhPf_w false
+read a cell1 i
+op notEqual yKhPf_i a 0
+jump 325 equal yKhPf_i false
+write a cell1 open
+write 0 cell1 i
+op add open open 1
+set didMove 1
+op add i i 1
+jump 315 always
+op add row row 1
+jump 296 always
+set row 0
+op lessThan yKhPf_w row 4
+jump 374 equal yKhPf_w false
+op mul s row 4
+set y s
+read a cell1 y
+op add z s 1
+read b cell1 z
+op add yKhPf0 a b
+op notEqual yKhPf_i 0 yKhPf0
+jump 346 equal yKhPf_i false
+op equal yKhPf_i a b
+jump 346 equal yKhPf_i false
+op add c a 1
+write c cell1 y
+write 0 cell1 z
+set didMove 1
+op add y s 1
+read a cell1 y
+op add z s 2
+read b cell1 z
+op add yKhPf0 a b
+op notEqual yKhPf_i 0 yKhPf0
+jump 359 equal yKhPf_i false
+op equal yKhPf_i a b
+jump 359 equal yKhPf_i false
+op add c a 1
+write c cell1 y
+write 0 cell1 z
+set didMove 1
+op add y s 2
+read a cell1 y
+op add z s 3
+read b cell1 z
+op add yKhPf0 a b
+op notEqual yKhPf_i 0 yKhPf0
+jump 372 equal yKhPf_i false
+op equal yKhPf_i a b
+jump 372 equal yKhPf_i false
+op add c a 1
+write c cell1 y
+write 0 cell1 z
+set didMove 1
+op add row row 1
+jump 330 always
+set row 0
+op lessThan yKhPf_w row 4
+jump 408 equal yKhPf_w false
+op mul s row 4
+op add open s 3
+op add a s 2
+read b cell1 a
+op equal yKhPf_i b 0
+jump 384 equal yKhPf_i false
+set open a
+op add a s 1
+read b cell1 a
+op equal yKhPf_i b 0
+jump 389 equal yKhPf_i false
+set open a
+read b cell1 s
+op equal yKhPf_i b 0
+jump 393 equal yKhPf_i false
+set open s
+op add i open 1
+op add yKhPf0 s 4
+op lessThan yKhPf_w i yKhPf0
+jump 406 equal yKhPf_w false
+read a cell1 i
+op notEqual yKhPf_i a 0
+jump 404 equal yKhPf_i false
+write a cell1 open
+write 0 cell1 i
+op add open open 1
+set didMove 1
+op add i i 1
+jump 394 always
+op add row row 1
+jump 375 always
+jump 525 always
+op equal yKhPf_i right 1
+jump 525 equal yKhPf_i false
+set row 0
+op lessThan yKhPf_w row 4
+jump 445 equal yKhPf_w false
+op mul s row 4
+set open s
+op add a s 1
+read b cell1 a
+op equal yKhPf_i b 0
+jump 421 equal yKhPf_i false
+set open a
+op add a s 2
+read b cell1 a
+op equal yKhPf_i b 0
+jump 426 equal yKhPf_i false
+set open a
+op add a s 3
+read b cell1 a
+op equal yKhPf_i b 0
+jump 431 equal yKhPf_i false
+set open a
+op sub i open 1
+op greaterThanEq yKhPf_w i s
+jump 443 equal yKhPf_w false
+read a cell1 i
+op notEqual yKhPf_i a 0
+jump 441 equal yKhPf_i false
+write a cell1 open
+write 0 cell1 i
+op sub open open 1
+set didMove 1
+op sub i i 1
+jump 432 always
+op add row row 1
+jump 412 always
+set row 0
+op lessThan yKhPf_w row 4
+jump 490 equal yKhPf_w false
+op mul s row 4
+op add y s 3
+read a cell1 y
+op add z s 2
+read b cell1 z
+op add yKhPf0 a b
+op notEqual yKhPf_i 0 yKhPf0
+jump 462 equal yKhPf_i false
+op equal yKhPf_i a b
+jump 462 equal yKhPf_i false
+op add c a 1
+write c cell1 y
+write 0 cell1 z
+set didMove 1
+op add y s 2
+read a cell1 y
+op add z s 1
+read b cell1 z
+op add yKhPf0 a b
+op notEqual yKhPf_i 0 yKhPf0
+jump 475 equal yKhPf_i false
+op equal yKhPf_i a b
+jump 475 equal yKhPf_i false
+op add c a 1
+write c cell1 y
+write 0 cell1 z
+set didMove 1
+op add y s 1
+read a cell1 y
+set z s
+read b cell1 z
+op add yKhPf0 a b
+op notEqual yKhPf_i 0 yKhPf0
+jump 488 equal yKhPf_i false
+op equal yKhPf_i a b
+jump 488 equal yKhPf_i false
+op add c a 1
+write c cell1 y
+write 0 cell1 z
+set didMove 1
+op add row row 1
+jump 446 always
+set row 0
+op lessThan yKhPf_w row 4
+jump 524 equal yKhPf_w false
+op mul s row 4
+set open s
+op add a s 1
+read b cell1 a
+op equal yKhPf_i b 0
+jump 500 equal yKhPf_i false
+set open a
+op add a s 2
+read b cell1 a
+op equal yKhPf_i b 0
+jump 505 equal yKhPf_i false
+set open a
+op add a s 3
+read b cell1 a
+op equal yKhPf_i b 0
+jump 510 equal yKhPf_i false
+set open a
+op sub i open 1
+op greaterThanEq yKhPf_w i s
+jump 522 equal yKhPf_w false
+read a cell1 i
+op notEqual yKhPf_i a 0
+jump 520 equal yKhPf_i false
+write a cell1 open
+write 0 cell1 i
+op sub open open 1
+set didMove 1
+op sub i i 1
+jump 511 always
+op add row row 1
+jump 491 always
+jump 525 always
+op equal yKhPf_i didMove 1
+jump 543 equal yKhPf_i false
+set i 0:
+op lessThan yKhPf_w i 1
+jump 543 equal yKhPf_w false
+op rand r 16
+op idiv r r 1
+read c cell1 r
+op equal yKhPf_i c 0
+jump 542 equal yKhPf_i false
+op rand p 10
+op lessThan yKhPf_i p 1
+jump 540 equal yKhPf_i false
+write 2 cell1 r
+jump 541 always
+write 1 cell1 r
+op add i i 1
+jump 528 always
+write sresetp cell1 20
+write supp cell1 21
+write srightp cell1 22
+write sdownp cell1 23
+write sleftp cell1 24
+end
