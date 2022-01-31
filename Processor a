@@ -1,11 +1,11 @@
 set i 0
-op lessThan yxVVA_w i 16
-jump 221 equal yxVVA_w false
+op lessThan lBCUO_w i 16
+jump 221 equal lBCUO_w false
 read v cell1 i
 draw stroke 2
 draw color 0 0 0 255
-op equal yxVVA_i v 1
-jump 15 equal yxVVA_i false
+op equal lBCUO_i v 1
+jump 15 equal lBCUO_i false
 draw clear 238 228 218
 draw line 30 60 50 60
 draw line 30 40 50 40
@@ -13,15 +13,15 @@ draw line 30 20 50 20
 draw line 50 60 50 40
 draw line 30 40 30 20
 jump 154 always
-op equal yxVVA_i v 2
-jump 22 equal yxVVA_i false
+op equal lBCUO_i v 2
+jump 22 equal lBCUO_i false
 draw clear 237 224 200
 draw line 30 40 50 40
 draw line 30 60 30 40
 draw line 50 60 50 20
 jump 154 always
-op equal yxVVA_i v 3
-jump 31 equal yxVVA_i false
+op equal lBCUO_i v 3
+jump 31 equal lBCUO_i false
 draw clear 242 177 121
 draw line 30 60 50 60
 draw line 30 40 50 40
@@ -29,8 +29,8 @@ draw line 30 20 50 20
 draw line 30 60 30 20
 draw line 50 60 50 20
 jump 154 always
-op equal yxVVA_i v 4
-jump 41 equal yxVVA_i false
+op equal lBCUO_i v 4
+jump 41 equal lBCUO_i false
 draw clear 245 149 99
 draw line 37 60 37 20
 draw line 43 60 43 20
@@ -39,8 +39,8 @@ draw line 43 40 63 40
 draw line 43 20 63 20
 draw line 63 40 63 20
 jump 154 always
-op equal yxVVA_i v 5
-jump 54 equal yxVVA_i false
+op equal lBCUO_i v 5
+jump 54 equal lBCUO_i false
 draw clear 246 124 95
 draw line 37 60 37 20
 draw line 17 60 37 60
@@ -52,8 +52,8 @@ draw line 43 20 63 20
 draw line 63 60 63 40
 draw line 43 40 43 20
 jump 154 always
-op equal yxVVA_i v 6
-jump 66 equal yxVVA_i false
+op equal lBCUO_i v 6
+jump 66 equal lBCUO_i false
 draw clear 246 94 59
 draw line 17 60 17 20
 draw line 17 60 37 60
@@ -64,57 +64,57 @@ draw line 43 60 43 40
 draw line 43 40 63 40
 draw line 63 60 63 20
 jump 154 always
-op equal yxVVA_i v 7
-jump 81 equal yxVVA_i false
+op equal lBCUO_i v 7
+jump 81 equal lBCUO_i false
 draw clear 237 207 114
-draw line 25 62 25 22
-draw line 31 62 49 62
+draw line 25 58 25 22
+draw line 31 58 49 58
 draw line 31 40 49 40
 draw line 31 22 49 22
-draw line 49 62 49 40
+draw line 49 58 49 40
 draw line 31 40 31 22
-draw line 55 62 73 62
+draw line 55 58 73 58
 draw line 55 40 73 40
 draw line 55 22 73 22
-draw line 55 62 55 22
-draw line 73 62 73 22
+draw line 55 58 55 22
+draw line 73 58 73 22
 jump 154 always
-op equal yxVVA_i v 8
-jump 100 equal yxVVA_i false
+op equal lBCUO_i v 8
+jump 100 equal lBCUO_i false
 draw clear 237 204 97
-draw line 7 62 25 62
+draw line 7 58 25 58
 draw line 7 40 25 40
 draw line 7 22 25 22
-draw line 25 62 25 40
+draw line 25 58 25 40
 draw line 7 40 7 22
-draw line 31 62 49 62
+draw line 31 58 49 58
 draw line 31 40 49 40
 draw line 31 22 49 22
 draw line 49 40 49 22
-draw line 31 62 31 40
-draw line 55 62 73 62
+draw line 31 58 31 40
+draw line 55 58 73 58
 draw line 55 40 73 40
 draw line 55 22 73 22
-draw line 55 62 55 22
+draw line 55 58 55 22
 draw line 73 40 73 22
 jump 154 always
-op equal yxVVA_i v 9
-jump 115 equal yxVVA_i false
+op equal lBCUO_i v 9
+jump 115 equal lBCUO_i false
 draw clear 237 200 80
-draw line 7 62 25 62
+draw line 7 58 25 58
 draw line 7 40 25 40
 draw line 7 22 25 22
 draw line 25 40 25 22
-draw line 7 62 7 40
-draw line 49 62 49 22
-draw line 55 62 73 62
+draw line 7 58 7 40
+draw line 49 58 49 22
+draw line 55 58 73 58
 draw line 55 40 73 40
 draw line 55 22 73 22
-draw line 73 62 73 40
+draw line 73 58 73 40
 draw line 55 40 55 22
 jump 154 always
-op equal yxVVA_i v 10
-jump 132 equal yxVVA_i false
+op equal lBCUO_i v 10
+jump 132 equal lBCUO_i false
 draw clear 237 197 63
 draw line 19 55 19 25
 draw line 23 55 38 55
@@ -130,8 +130,8 @@ draw line 61 55 61 40
 draw line 76 55 76 25
 draw line 61 40 76 40
 jump 154 always
-op equal yxVVA_i v 11
-jump 153 equal yxVVA_i false
+op equal lBCUO_i v 11
+jump 153 equal lBCUO_i false
 draw clear 237 194 46
 draw line 4 55 19 55
 draw line 4 40 19 40
@@ -147,74 +147,74 @@ draw line 57 55 57 25
 draw line 42 40 57 40
 draw line 61 55 61 25
 draw line 76 55 76 25
-draw line 61 60 76 60
+draw line 61 55 76 55
 draw line 61 40 76 40
-draw line 61 20 76 20
+draw line 61 25 76 25
 jump 154 always
 draw clear 0 0 0
 print v
-op equal yxVVA_i i 0
-jump 159 equal yxVVA_i false
+op equal lBCUO_i i 0
+jump 159 equal lBCUO_i false
 drawflush display1
 jump 219 always
-op equal yxVVA_i i 1
-jump 163 equal yxVVA_i false
+op equal lBCUO_i i 1
+jump 163 equal lBCUO_i false
 drawflush display2
 jump 219 always
-op equal yxVVA_i i 2
-jump 167 equal yxVVA_i false
+op equal lBCUO_i i 2
+jump 167 equal lBCUO_i false
 drawflush display3
 jump 219 always
-op equal yxVVA_i i 3
-jump 171 equal yxVVA_i false
+op equal lBCUO_i i 3
+jump 171 equal lBCUO_i false
 drawflush display4
 jump 219 always
-op equal yxVVA_i i 4
-jump 175 equal yxVVA_i false
+op equal lBCUO_i i 4
+jump 175 equal lBCUO_i false
 drawflush display5
 jump 219 always
-op equal yxVVA_i i 5
-jump 179 equal yxVVA_i false
+op equal lBCUO_i i 5
+jump 179 equal lBCUO_i false
 drawflush display6
 jump 219 always
-op equal yxVVA_i i 6
-jump 183 equal yxVVA_i false
+op equal lBCUO_i i 6
+jump 183 equal lBCUO_i false
 drawflush display7
 jump 219 always
-op equal yxVVA_i i 7
-jump 187 equal yxVVA_i false
+op equal lBCUO_i i 7
+jump 187 equal lBCUO_i false
 drawflush display8
 jump 219 always
-op equal yxVVA_i i 8
-jump 191 equal yxVVA_i false
+op equal lBCUO_i i 8
+jump 191 equal lBCUO_i false
 drawflush display9
 jump 219 always
-op equal yxVVA_i i 9
-jump 195 equal yxVVA_i false
+op equal lBCUO_i i 9
+jump 195 equal lBCUO_i false
 drawflush display10
 jump 219 always
-op equal yxVVA_i i 10
-jump 199 equal yxVVA_i false
+op equal lBCUO_i i 10
+jump 199 equal lBCUO_i false
 drawflush display11
 jump 219 always
-op equal yxVVA_i i 11
-jump 203 equal yxVVA_i false
+op equal lBCUO_i i 11
+jump 203 equal lBCUO_i false
 drawflush display12
 jump 219 always
-op equal yxVVA_i i 12
-jump 207 equal yxVVA_i false
+op equal lBCUO_i i 12
+jump 207 equal lBCUO_i false
 drawflush display13
 jump 219 always
-op equal yxVVA_i i 13
-jump 211 equal yxVVA_i false
+op equal lBCUO_i i 13
+jump 211 equal lBCUO_i false
 drawflush display14
 jump 219 always
-op equal yxVVA_i i 14
-jump 215 equal yxVVA_i false
+op equal lBCUO_i i 14
+jump 215 equal lBCUO_i false
 drawflush display15
 jump 219 always
-op equal yxVVA_i i 15
-jump 219 equal yxVVA_i false
+op equal lBCUO_i i 15
+jump 219 equal lBCUO_i false
 drawflush display16
 jump 219 always
 op add i i 1
